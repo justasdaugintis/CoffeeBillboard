@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Button from "react-bootstrap/esm/Button";
 import Modal from "react-bootstrap/esm/Modal";
-import CoffeeForm from "./form";
+import CoffeeForm from "./coffeeForm";
 import "./style.scss"
 
 /**

@@ -4,7 +4,7 @@ import Col from "react-bootstrap/esm/Col";
 import Container from "react-bootstrap/esm/Container";
 import Row from "react-bootstrap/esm/Row";
 import CoffeeBillboard from "../components/coffeeBillboard/coffeeBillboard";
-import AddCoffee from "../components/addCoffee/modal"
+import AddCoffee from "../components/addCoffee/coffeeModal"
 
 /**
  * Application layout component
