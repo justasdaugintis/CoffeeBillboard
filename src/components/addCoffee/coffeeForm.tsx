@@ -69,13 +69,13 @@ const CoffeeForm: React.FC<IProps> = ({handleClose}) => {
       </Form.Group>
       <Form.Group controlId="coffeePrice">
           <Form.Label>Price</Form.Label>
-          <Form.Control required type="number"  value={priceValue} placeholder="how much ?" onChange={(
+          <Form.Control required type="number"  value={priceValue} placeholder="how much?" onChange={(
               ev: React.ChangeEvent<HTMLInputElement>,
           ): void => setPriceValue(ev.target.value)} />
       </Form.Group>
       <Form.Group controlId="coffeeImage">
           <Form.Label>Image URL</Form.Label>
-          <Form.Control required type="text" value={imgUrl} placeholder="pictureURL/coffee...." onChange={(
+          <Form.Control required type="text" value={imgUrl} placeholder="pictureURL/coffee..." onChange={(
               ev: React.ChangeEvent<HTMLInputElement>,
           ): void => setImgUrl(ev.target.value)}/>
       </Form.Group>
