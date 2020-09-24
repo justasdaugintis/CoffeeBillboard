@@ -1,8 +1,9 @@
-import * as webpack from "webpack";
-import * as HtmlWebPackPlugin from "html-webpack-plugin";
+import webpack from "webpack";
+import HtmlWebPackPlugin from "html-webpack-plugin";
 
 const htmlPlugin = new HtmlWebPackPlugin({
-  template: "./src/index.html"
+  template: "./src/index.html",
+  filename: "./index.html"
 });
 
 const config: webpack.Configuration = {
@@ -11,10 +12,16 @@ const config: webpack.Configuration = {
   resolve: {
     extensions: [".ts", ".tsx", ".js", ".json"]
   },
-
   module: {
     rules: [
-      { test: /\.tsx?$/, loader: "awesome-typescript-loader" }
+      { test: /\.tsx?$/, loader: "awesome-typescript-loader" },
+      { test:/\.(s*)css$/,  
+        loaders: [
+        'style-loader',
+        'css-loader',
+        'sass-loader',
+        ],
+      },
     ]
   },
   plugins: [htmlPlugin]
