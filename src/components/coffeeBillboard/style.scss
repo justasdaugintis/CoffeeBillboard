@@ -1,0 +1,38 @@
+.coffee-details {
+    display: flex;
+    margin: 2px;   
+}
+
+.coffee-name {
+    font-weight: bold;
+}
+
+.coffee-price {
+    margin-right: 5px;
+}
+
+.coffee-Billboard{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10%;
+}
+
+.coffeeElement{
+    object-fit: cover;
+    margin: 5px;
+    padding-bottom: 10px;
+    flex-basis: 20%;
+    overflow: hidden;
+}
+
+.removeButton{
+    padding: 2px;
+}
+
+//bootstrap css overrride
+.img-thumbnail{
+    width: 100%;
+    vertical-align: middle;
+    min-width: 120px;
+    min-height: 120px;
+}
