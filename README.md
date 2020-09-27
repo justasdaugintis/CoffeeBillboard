@@ -6,7 +6,6 @@ This application shows a billboard of coffees. You can remove them or add a new 
 ## To run application locally
 
 use "npm run dev"
-This will serve the application locally on port 8081
 
 ## To build application
 
