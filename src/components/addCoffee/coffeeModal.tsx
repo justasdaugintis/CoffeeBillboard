@@ -12,13 +12,13 @@ const CoffeeModal: React.FC = () => {
   /**
    *  Local state to control modal 
    */
-    const [show, setShow] = useState(false);
+    const [show, setShow] = useState<boolean>(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
     return (
       <div>
-          <Button className="addCoffeeButton" variant="success" onClick={handleShow}>
+          <Button className="add-coffee-button" variant="success" onClick={handleShow}>
             Add coffee
           </Button>
         <Modal show={show} onHide={handleClose}>

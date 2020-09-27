@@ -39,7 +39,7 @@ const CoffeeBillboard: React.FC = () => {
   ) : []
 
   return (
-    <div className="coffee-Billboard">
+    <div className="coffee-billboard">
       {items}
     </div>
   );

@@ -7,7 +7,7 @@ interface IProps {
    id: string;
    name: string;
    price: string;
-   img?: string;
+   img: string;
    onRemove: Function;
 }
 
@@ -21,7 +21,7 @@ interface IProps {
  */
 const CoffeeElement: React.FC<IProps> = ({id, name, price, img, onRemove}) => {
   return (
-      <div key={id+1} className="coffeeElement">
+      <div key={id+1} className="coffee-element">
         <div  className="removeButton">
           <Button size="sm" variant="danger" onClick={()=>{onRemove(id)}}>X</Button>
         </div>

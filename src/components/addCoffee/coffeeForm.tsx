@@ -26,7 +26,7 @@ const CoffeeForm: React.FC<IProps> = ({handleClose}) => {
     const coffee: ICoffee = {
         id: uniqueID.toString(),
         name: name,
-        price: "$" + " " + price.toString(),
+        price: "$" + price,
         img: imgURL
     }
     dispatch(coffeeActions.addItem(coffee))
@@ -61,19 +61,19 @@ const CoffeeForm: React.FC<IProps> = ({handleClose}) => {
 
   return (
       <Form noValidate validated={validated} onSubmit={handleSubmit}>
-      <Form.Group controlId="coffeeName">
+      <Form.Group controlId="coffee-name">
           <Form.Label>Coffee</Form.Label>
           <Form.Control required type="text" value={nameValue} placeholder="your favourite coffee..." onChange={(
               ev: React.ChangeEvent<HTMLInputElement>,
           ): void => setNameValue(ev.target.value)}/>
       </Form.Group>
-      <Form.Group controlId="coffeePrice">
+      <Form.Group controlId="coffee-price">
           <Form.Label>Price</Form.Label>
           <Form.Control required type="number"  value={priceValue} placeholder="how much?" onChange={(
               ev: React.ChangeEvent<HTMLInputElement>,
           ): void => setPriceValue(ev.target.value)} />
       </Form.Group>
-      <Form.Group controlId="coffeeImage">
+      <Form.Group controlId="coffee-image">
           <Form.Label>Image URL</Form.Label>
           <Form.Control required type="text" value={imgUrl} placeholder="pictureURL/coffee..." onChange={(
               ev: React.ChangeEvent<HTMLInputElement>,
